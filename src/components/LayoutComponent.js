@@ -24,6 +24,7 @@ class LayoutComponent extends Component {
           onCollapse={this.onCollapse}
         >
           <div className="logo" ></div>
+          <p></p><p></p><p></p><p></p><p></p>
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
             <Menu.Item key="1">
               <Icon type="laptop" />

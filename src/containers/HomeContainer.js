@@ -7,6 +7,13 @@ import Bcrumb from '../components/BcrumbComponent'
 
 const Step = Steps.Step;
 
+/*
+
+   暂时剪切的东西：
+   <Bcrumb title= "快速入门" />
+
+*/
+
 class HomeContainer extends Component{
 
     constructor(props) {
@@ -39,7 +46,7 @@ class HomeContainer extends Component{
 
         return (
             <div className="home-container">
-              <Bcrumb title= "快速入门" />
+              
               <Row>
                  <Col span={24}>
                     <Card title= "项目前言">
