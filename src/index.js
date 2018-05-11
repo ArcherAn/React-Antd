@@ -11,9 +11,12 @@ import {
 import './index.css';
 import App from './App';
 import HomeContainer from '../src/containers/HomeContainer';
-import Layout from './components/LayoutComponent'
+import Layout1 from './components/LayoutComponent'
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-          <Layout />, document.getElementById('root'));
-registerServiceWorker();
+
+          <Layout1 />
+          , document.getElementById('root')
+          );
+//registerServiceWorker();
