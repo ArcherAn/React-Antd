@@ -19,6 +19,7 @@ class LayoutComponent extends Component {
   onCollapse = (collapsed) => {
     
     this.setState({ collapsed });
+    console.log('hello');
   }
   render() {
     return (
