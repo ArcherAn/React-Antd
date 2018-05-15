@@ -7,6 +7,7 @@ import { Layout, Menu, Breadcrumb, Icon } from 'antd';
 import LayoutHeader from '../components/LayoutHeader';
 import LayoutFooter from '../components/LayoutFooter';
 import LayoutMenu from '../components/LayoutMenu';
+import DashboardContainer1 from '../containers/DashboardContainer1';
 const { Header, Content, Footer, Sider } = Layout;
 const SubMenu = Menu.SubMenu;
 
@@ -14,11 +15,12 @@ const SubMenu = Menu.SubMenu;
 class LayoutComponent extends Component {
 
   state = {
-    collapsed: false,
+    siderFold: false,
   };
-  onCollapse = (collapsed) => {
+
+  onCollapse(siderFold) {
     
-    this.setState({ collapsed });
+    this.setState({ siderFold: siderFold });
   }
   render() {
     return (
@@ -26,20 +28,19 @@ class LayoutComponent extends Component {
         <Sider
           trigger={null}
           collapsible    //  是否可收起
-          collapsed={this.state.collapsed}  // 当前收起状态
+          collapsed={this.state.siderFold}  // 当前收起状态
           onCollapse={this.onCollapse}
-          style={{ overflow: 'auto', minHeight: '100vh', position: 'fixed' , left: 0}}
         >
-          <div className="logo" ></div>
-          <LayoutMenu />
+        <div className="logo" ></div>
+        <LayoutMenu />
         </Sider>
 
-        <Layout style={{ marginLeft: 200 }}>
-          <LayoutHeader onClick={this.onCollapse.bind(this)}/>
-          <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
-            <div style={{ padding: 24, background: '#fff',  }}>
-              <Home />
-            </div>
+        <Layout >
+          <LayoutHeader onCollapse={this.onCollapse.bind(this)} />
+          <Content >
+            
+              <DashboardContainer1 />
+            
           </Content>
           <LayoutFooter />
         </Layout>
