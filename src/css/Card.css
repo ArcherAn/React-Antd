@@ -161,7 +161,7 @@
       font-weight: 300;
     }
 
-   .card-footer2 position {
+   .card-footer2 .position {
       display: flex;
       -webkit-box-align: center;
       align-items: center;
@@ -169,18 +169,23 @@
       font-weight: 100;
     }
   
-.iconWarp{
+.countcard{
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+.countcard .iconWarp{
   font-size: 54px;
   float: left;
 }
 
-.card-content3{
+.countcard .card-content3{
   width: 100%;
   padding-left: 78px;
   text-align: right;
 }
 
-.card-content3 title{
+.card-content3 .title{
   line-height: 16px;
   font-size: 16px;
   margin-bottom: 8px;
@@ -189,7 +194,7 @@
   color: #333333;
 }
 
-.card-content3 number{
+.card-content3 .number{
   line-height: 32px;
   font-size: 24px;
   height: 32px;
