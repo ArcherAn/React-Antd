@@ -134,7 +134,7 @@
       font-weight: 300;
     }
 
-   .card-content2p {
+   .card-content2 {
       margin-top: 5px;
       color: #999;
       font-weight: 100;
@@ -169,6 +169,29 @@
       font-weight: 100;
     }
   
+.iconWarp{
+  font-size: 54px;
+  float: left;
+}
 
-  
+.card-content3{
+  width: 100%;
+  padding-left: 78px;
+  text-align: right;
+}
+
+.card-content3 title{
+  line-height: 16px;
+  font-size: 16px;
+  margin-bottom: 8px;
+  height: 16px;
+  font-weight: 900;
+  color: #333333;
+}
+
+.card-content3 number{
+  line-height: 32px;
+  font-size: 24px;
+  height: 32px;
+}
   
