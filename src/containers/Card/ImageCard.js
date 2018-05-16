@@ -64,7 +64,7 @@ class ImageCard extends Component{
                         <Col xs={12} sm={12} md={12} lg={8} xl={8} key={k}>
                            <Card
                            bordered={false}
-                           hoverable = {true} style={{marginTop: '40px'}}>
+                           hoverable = {true} style={{marginTop: '50px'}}>
                            <div className={'card-header2'}>
                              <img src={require(`../../img/card-${v.image}.jpeg`)} alt="" />
                            </div>

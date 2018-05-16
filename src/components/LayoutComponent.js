@@ -8,6 +8,7 @@ import LayoutHeader from '../components/LayoutHeader';
 import LayoutFooter from '../components/LayoutFooter';
 import LayoutMenu from '../components/LayoutMenu';
 import DashboardContainer1 from '../containers/DashboardContainer1';
+import DashboardContainer2 from '../containers/DashboardContainer2';
 const { Header, Content, Footer, Sider } = Layout;
 const SubMenu = Menu.SubMenu;
 
@@ -39,7 +40,7 @@ class LayoutComponent extends Component {
           <LayoutHeader onCollapse={this.onCollapse.bind(this)} />
           <Content >
             
-              <DashboardContainer1 />
+              <DashboardContainer2 />
             
           </Content>
           <LayoutFooter />
