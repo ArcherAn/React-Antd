@@ -20,7 +20,7 @@ class LayoutComponent extends Component {
 
   onCollapse(siderFold) {
     
-    this.setState({ siderFold: siderFold });
+     this.setState({ siderFold: siderFold });
   }
   render() {
     return (
