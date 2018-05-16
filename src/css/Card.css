@@ -1,6 +1,11 @@
+ 
+ /*
+    
+    数字卡片的CSS样式
 
+ */
 
-    .card-header {
+    .card-header1 {
       color: #FFFFFF;
       border-radius: 3px;
       position: relative;
@@ -58,29 +63,29 @@
         box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(76, 175, 80, 0.4);
       }
   
-      .card-header h4 {
+      .card-header1 h4 {
         color: #FFFFFF;
         padding: 20px 30px;
         font-size: 40px;
       }
     
   
-    .card-content {
+    .card-content1 {
       text-align: right;
     }
   
-    .card-content .category {
+    .card-content1 .category {
         color: #999;
       }
   
-      .card-content h3 {
+      .card-content1 h3 {
         line-height: 0.5;
         font-size: 1.825em;
         font-weight: 300;
       }
     
   
-    .card-footer {
+    .card-footer1 {
       margin: 10px 0;
       padding-top: 5px;
       color: #999;
@@ -90,5 +95,80 @@
       width: 100%;
       float: left;
     }
+
+
+  /*
+
+     图片卡片的CSS样式
+
+  */
+
+ 
+
+  .card-header2 {
+
+    position: relative;
+    overflow: hidden;
+    margin-top: -40px;
+    border-radius: 6px;
+    z-index: 3;
+  }
+
+   
+  .card-header2 img{
+    position: relative;
+    max-width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-content2 {
+    text-align: center;
+    padding: 10px 10px 13px 10px;
+    margin-top: 7px;
+  }
+
+  .card-content2 h4 {
+      line-height: 0.5;
+      font-size: 1.3em;
+      font-weight: 300;
+    }
+
+   .card-content2p {
+      margin-top: 5px;
+      color: #999;
+      font-weight: 100;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #eee;
+    }
+  
+
+  .card-footer2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 0 10px 0;
+  }
+
+  .card-footer2 h4 {
+      font-size: 1.3em;
+      font-weight: 300;
+    }
+
+   .card-footer2 position {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      color: #999;
+      font-weight: 100;
+    }
+  
+
   
   

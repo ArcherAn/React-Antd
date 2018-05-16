@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import FigureCard from '../containers/Card/FigureCard'
+import FigureCard from '../containers/Card/FigureCard';
+import ImageCard from '../containers/Card/ImageCard';
 import '../App.css'
 import { Icon, Row, Col, Card, Steps, Button, message } from 'antd';
 
@@ -17,6 +18,7 @@ class DashboardContainer1 extends Component{
         return(
             <div className="home-container">
                 <FigureCard />
+                <ImageCard />
             </div>
         )
     }

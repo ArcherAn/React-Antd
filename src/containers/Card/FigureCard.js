@@ -53,10 +53,10 @@ class FigureCard extends Component{
                <Card
                     title={
                       <div>
-                        <div className={classnames('card-header', { [`${v.color}`]: true })}>
+                        <div className={classnames('card-header1', { [`${v.color}`]: true })}>
                           <h4><Icon type={v.icon} /></h4>
                         </div>
-                        <div className={'card-content'}>
+                        <div className={'card-content1'}>
                           <p className={'category'}>{v.title}</p>
                           <h3>
                             <CountUp
@@ -73,7 +73,7 @@ class FigureCard extends Component{
                       }
                     bordered={false}
                     hoverable = {true}>
-                    <div className={'card-footer'}>
+                    <div className={'card-footer1'}>
                       <Icon type={v.subIcon} />
                       {' '}{v.sub}
                     </div>
