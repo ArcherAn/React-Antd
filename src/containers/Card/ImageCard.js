@@ -56,7 +56,7 @@ class ImageCard extends Component{
     ]
 
         return(
-            <div >
+            <div>
                  <Row gutter={32} className="showcase-2">
                  {
                      imagecard.map((v, k) => {
