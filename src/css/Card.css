@@ -169,23 +169,29 @@
       font-weight: 100;
     }
   
-.countcard{
+ /*
+
+     计数卡片的CSS样式
+
+  */
+
+.countCard{
   margin-bottom: 24px;
   cursor: pointer;
 }
 
-.countcard .iconWarp{
+.iconWarp{
   font-size: 54px;
   float: left;
 }
 
-.countcard .card-content3{
+.card-content3{
   width: 100%;
   padding-left: 78px;
   text-align: right;
 }
 
-.card-content3 .title{
+.title{
   line-height: 16px;
   font-size: 16px;
   margin-bottom: 8px;
@@ -194,7 +200,7 @@
   color: #333333;
 }
 
-.card-content3 .number{
+.number{
   line-height: 32px;
   font-size: 24px;
   height: 32px;

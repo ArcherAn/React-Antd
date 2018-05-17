@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import CountCard from '../containers/Card/CountCard';
+import SalesCard from '../containers/Card/SalesCard';
 import '../App.css'
 import { Icon, Row, Col, Card, Steps, Button, message } from 'antd';
 
@@ -17,6 +18,7 @@ class DashboardContainer2 extends Component{
             <div className="home-container">
 
                 <CountCard />
+                <SalesCard />
 
             </div>
         )
