@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import CountUp from 'react-countup';
 import '../../App.css';
 import '../../css/Card.css';
-import { Icon, Row, Col, Card, Steps, Button, message } from 'antd';
+import { Icon, Row, Col, Card } from 'antd';
 
 class CountCard extends Component{
     render(){
@@ -33,43 +33,41 @@ class CountCard extends Component{
                 number:4324,
               }
         ]
-
-        return(
-         <div>
-             <Row gutter={16} className="showcase-3"> 
-             {
-               countcard.map((v, k) => {
-                   return
-                   (
-                    <Col xs={24} sm={24} md={12} lg={6} xl={6} key={k}>
-                    <Card
-                    bordered={false}
-                    hoverable = {true}
-                    className = "countcard"
-                    style={{cursor:'pointer'}}>
-                    <Icon className='iconWarp' style={{ color: v.color }} type={v.icon} />
-                    <div className='card-content3'>
-                      <p className='title'>{v.title || ''}</p>
-                      <p className='number'>
-                        <CountUp
-                          start={0}
-                          end={v.number}
-                          duration={2.75}
-                          useEasing
-                          useGrouping
-                          separator=","
-                        />
-                      </p>
-                    </div>
-                    </Card>
-                    </Col>
-                   )
-               })
-            }
-             </Row>
-         </div>
-        
-        );
+     
+        return (
+            <div>
+              <Row gutter={16}>
+                {
+                  countcard.map((v, k) => {
+                    return (
+                      <Col xs={24} sm={24} md={12} lg={6} xl={6} key={k}>
+                        <Card
+                          className='countCard'
+                          bordered={false}
+                          hoverable>
+                          <Icon className='iconWarp' style={{ color: v.color }} type={v.icon} />
+                          <div className='card-content3'>
+                            <p className='title'>{v.title || ''}</p>
+                            <p className='number'>
+                              <CountUp
+                                start={0}
+                                end={v.number}
+                                duration={2.75}
+                                useEasing
+                                useGrouping
+                                separator=","
+                              />
+                            </p>
+                          </div>
+                        </Card>
+                      </Col>
+                    )
+                  })
+                }
+              </Row>
+            </div>
+          );
+      
     }
 }
 
