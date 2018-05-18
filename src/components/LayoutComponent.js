@@ -39,7 +39,7 @@ class LayoutComponent extends Component {
 
         <Layout >
           <LayoutHeader onCollapse={this.onCollapse.bind(this)} />
-          <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
+          <Content>
          
               <DashboardContainer2 />
            
