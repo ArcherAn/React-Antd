@@ -77,7 +77,7 @@ class SalesCard extends Component{
             </Col>
           </Row>
 
-          <Row>
+          <Row style={{marginTop:'25px'}}>
             <Col span={24}>
             <Card bordered={false} bodyStyle={{
              padding: '24px 36px 24px 0',
