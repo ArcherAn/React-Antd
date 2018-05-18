@@ -82,6 +82,7 @@ class SalesCard extends Component{
             <Card bordered={false} bodyStyle={{
              padding: '24px 36px 24px 0',
             }}>
+            <div className='title' style={{paddingLeft:'20px'}}>年龄统计</div>
             <Chart height={260} data={dv2} forceFit>
             <Legend />
             <Coord transpose />
