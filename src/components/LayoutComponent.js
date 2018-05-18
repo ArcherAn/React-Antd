@@ -31,7 +31,7 @@ class LayoutComponent extends Component {
           collapsible    //  是否可收起
           collapsed={this.state.siderFold}  // 当前收起状态
           onCollapse={this.onCollapse}
-          style={{ overflow: 'auto', height: '100vh' }}
+         
         >
         <div className="logo" ></div>
         <LayoutMenu />
@@ -39,9 +39,10 @@ class LayoutComponent extends Component {
 
         <Layout >
           <LayoutHeader onCollapse={this.onCollapse.bind(this)} />
-          <Content >
-            
+          <Content>
+         
               <DashboardContainer2 />
+           
             
           </Content>
           <LayoutFooter />

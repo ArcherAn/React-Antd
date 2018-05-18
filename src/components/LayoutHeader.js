@@ -24,7 +24,7 @@ class LayoutHeader extends Component {
 
     render(){
         return(
-        <Header  style = {{background: '#fff' }} >
+        <Header  style={{ background: '#fff', padding: 0 }} >
           <span className="btnBars" onClick={this.toggle.bind(this)} >
              <Icon 
              className="trigger"
